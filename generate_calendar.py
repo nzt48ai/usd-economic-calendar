@@ -2,17 +2,18 @@ from ics import Calendar, Event
 import requests
 from datetime import datetime, timedelta
 
-API_KEY = "d6mq2dpr01qir35i1fu0d6mq2dpr01qir35i1fug"
+API_KEY = "YOUR_FINNHUB_KEY"
 
 start = datetime.utcnow()
 end = start + timedelta(days=90)
 
 url = f"https://finnhub.io/api/v1/calendar/economic?token={API_KEY}"
 
-response = requests.get(url, timeout=30)
+response = requests.get(url)
 data = response.json().get("economicCalendar", [])
 
-calendar = Calendar()
+high_calendar = Calendar()
+medium_calendar = Calendar()
 
 groups = {}
 
@@ -20,7 +21,7 @@ for item in data:
 
     currency = item.get("currency")
     impact = item.get("impact")
-    event_name = item.get("event")
+    title = item.get("event")
     timestamp = item.get("time")
 
     if currency != "USD":
@@ -43,28 +44,29 @@ for item in data:
         groups[key] = {"time": dt, "high": [], "medium": []}
 
     if impact == "High":
-        groups[key]["high"].append(event_name)
-    else:
-        groups[key]["medium"].append(event_name)
+        groups[key]["high"].append(title)
+
+    if impact == "Medium":
+        groups[key]["medium"].append(title)
 
 for g in groups.values():
 
-    parts = []
-
     if g["high"]:
-        parts.append("🔴 " + " | ".join(g["high"]))
+        e = Event()
+        e.name = "🔴 " + " | ".join(g["high"]) + " (USD)"
+        e.begin = g["time"]
+        e.duration = timedelta(minutes=30)
+        high_calendar.events.add(e)
 
     if g["medium"]:
-        parts.append("🟠 " + " | ".join(g["medium"]))
+        e = Event()
+        e.name = "🟠 " + " | ".join(g["medium"]) + " (USD)"
+        e.begin = g["time"]
+        e.duration = timedelta(minutes=30)
+        medium_calendar.events.add(e)
 
-    title = " | ".join(parts)
+with open("usd_high.ics", "w") as f:
+    f.writelines(high_calendar)
 
-    e = Event()
-    e.name = title + " (USD)"
-    e.begin = g["time"]
-    e.duration = timedelta(minutes=30)
-
-    calendar.events.add(e)
-
-with open("usd_calendar.ics", "w") as f:
-    f.writelines(calendar)
+with open("usd_medium.ics", "w") as f:
+    f.writelines(medium_calendar)
