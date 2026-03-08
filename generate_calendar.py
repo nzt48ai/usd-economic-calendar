@@ -1,25 +1,23 @@
+from ics import Calendar, Event
 import requests
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta
 
-rss_url = "https://nfs.faireconomy.media/ff_calendar_thisweek.xml"
+rss = "https://nfs.faireconomy.media/ff_calendar_thisweek.xml"
 
-response = requests.get(rss_url)
+response = requests.get(rss)
 
 root = ET.fromstring(response.content)
+
+calendar = Calendar()
 
 now = datetime.utcnow()
 limit = now + timedelta(days=90)
 
-lines = []
-lines.append("BEGIN:VCALENDAR")
-lines.append("VERSION:2.0")
-lines.append("PRODID:-//USD Economic Calendar//EN")
+for event in root.iter("event"):
 
-for item in root.iter("event"):
-
-    country = item.find("country").text
-    impact = item.find("impact").text
+    country = event.find("country").text
+    impact = event.find("impact").text
 
     if country != "USD":
         continue
@@ -27,8 +25,8 @@ for item in root.iter("event"):
     if impact not in ["Medium", "High"]:
         continue
 
-    date = item.find("date").text
-    time = item.find("time").text
+    date = event.find("date").text
+    time = event.find("time").text
 
     if time == "All Day":
         continue
@@ -41,20 +39,19 @@ for item in root.iter("event"):
     if dt < now or dt > limit:
         continue
 
-    start = dt.strftime("%Y%m%dT%H%M%SZ")
-    end = (dt + timedelta(minutes=30)).strftime("%Y%m%dT%H%M%SZ")
+    title = event.find("title").text
 
-    title = item.find("title").text
+    if impact == "High":
+        title = "🔴 " + title
+    elif impact == "Medium":
+        title = "🟠 " + title
 
-    lines.append("BEGIN:VEVENT")
-    lines.append(f"UID:{title}-{start}")
-    lines.append(f"DTSTAMP:{start}")
-    lines.append(f"DTSTART:{start}")
-    lines.append(f"DTEND:{end}")
-    lines.append(f"SUMMARY:{title} (USD)")
-    lines.append("END:VEVENT")
+    e = Event()
+    e.name = title + " (USD)"
+    e.begin = dt
+    e.duration = timedelta(minutes=30)
 
-lines.append("END:VCALENDAR")
+    calendar.events.add(e)
 
 with open("usd_calendar.ics","w") as f:
-    f.write("\n".join(lines))
+    f.writelines(calendar)
