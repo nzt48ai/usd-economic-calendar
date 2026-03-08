@@ -1,46 +1,49 @@
 import requests
 from datetime import datetime, timedelta
 
-start = datetime.utcnow()
-end = start + timedelta(days=90)
-
-url = f"https://api.tradingeconomics.com/calendar/country/united states/{start:%Y-%m-%d}/{end:%Y-%m-%d}?c=guest:guest"
+url = "https://api.tradingeconomics.com/calendar/country/united%20states"
 
 data = requests.get(url).json()
+
+now = datetime.utcnow()
+limit = now + timedelta(days=90)
 
 lines = []
 lines.append("BEGIN:VCALENDAR")
 lines.append("VERSION:2.0")
 lines.append("PRODID:-//USD Economic Calendar//EN")
 
-for item in data:
+for e in data:
 
-    importance = item.get("Importance")
-
-    if importance is None:
+    try:
+        importance = int(e["Importance"])
+    except:
         continue
 
-    if int(importance) < 2:
+    if importance < 2:
         continue
 
-    date_string = item.get("Date")
+    date_string = e.get("Date")
 
     if not date_string:
         continue
 
     dt = datetime.fromisoformat(date_string.replace("Z",""))
 
-    start_time = dt.strftime("%Y%m%dT%H%M%SZ")
-    end_time = (dt + timedelta(minutes=30)).strftime("%Y%m%dT%H%M%SZ")
+    if dt > limit:
+        continue
 
-    uid = f"{item['Event']}-{start_time}"
+    start = dt.strftime("%Y%m%dT%H%M%SZ")
+    end = (dt + timedelta(minutes=30)).strftime("%Y%m%dT%H%M%SZ")
+
+    uid = f"{e['Event']}-{start}"
 
     lines.append("BEGIN:VEVENT")
     lines.append(f"UID:{uid}")
-    lines.append(f"DTSTAMP:{start_time}")
-    lines.append(f"DTSTART:{start_time}")
-    lines.append(f"DTEND:{end_time}")
-    lines.append(f"SUMMARY:{item['Event']} (USD)")
+    lines.append(f"DTSTAMP:{start}")
+    lines.append(f"DTSTART:{start}")
+    lines.append(f"DTEND:{end}")
+    lines.append(f"SUMMARY:{e['Event']} (USD)")
     lines.append("END:VEVENT")
 
 lines.append("END:VCALENDAR")
