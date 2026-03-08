@@ -12,14 +12,14 @@ db_file = "events.json"
 now = datetime.utcnow()
 limit = now + timedelta(days=90)
 
-# load stored events
+# load database
 if os.path.exists(db_file):
     with open(db_file) as f:
-        events_db = json.load(f)
+        db = json.load(f)
 else:
-    events_db = []
+    db = []
 
-# fetch weekly feed
+# download weekly feed
 xml = requests.get(rss)
 root = ET.fromstring(xml.content)
 
@@ -48,54 +48,60 @@ for event in root.iter("event"):
     except:
         continue
 
-    event_obj = {
-        "title":title,
-        "impact":impact,
-        "time":dt.isoformat()
+    entry = {
+        "title": title,
+        "impact": impact,
+        "time": dt.isoformat()
     }
 
-    if event_obj not in events_db:
-        events_db.append(event_obj)
+    if entry not in db:
+        db.append(entry)
 
 # keep only next 90 days
-events_db = [
-    e for e in events_db
+db = [
+    e for e in db
     if now <= datetime.fromisoformat(e["time"]) <= limit
 ]
 
+# save database
 with open(db_file,"w") as f:
-    json.dump(events_db,f)
+    json.dump(db,f)
 
-high_calendar = Calendar()
-medium_calendar = Calendar()
-
+# group events by timestamp
 groups = {}
 
-for e in events_db:
+for e in db:
 
     dt = datetime.fromisoformat(e["time"])
     key = dt.strftime("%Y%m%dT%H%M")
 
     if key not in groups:
-        groups[key] = {"time":dt,"high":[],"medium":[]}
+        groups[key] = {
+            "time": dt,
+            "high": [],
+            "medium": []
+        }
 
     if e["impact"] == "High":
         groups[key]["high"].append(e["title"])
     else:
         groups[key]["medium"].append(e["title"])
 
+high_calendar = Calendar()
+medium_calendar = Calendar()
+
 for g in groups.values():
 
     if g["high"]:
         ev = Event()
-        ev.name = "🔴 " + " | ".join(g["high"]) + " (USD)"
+        ev.name = "🔴 " + " | ".join(sorted(g["high"])) + " (USD)"
         ev.begin = g["time"]
         ev.duration = timedelta(minutes=30)
         high_calendar.events.add(ev)
 
     if g["medium"]:
         ev = Event()
-        ev.name = "🟠 " + " | ".join(g["medium"]) + " (USD)"
+        ev.name = "🟠 " + " | ".join(sorted(g["medium"])) + " (USD)"
         ev.begin = g["time"]
         ev.duration = timedelta(minutes=30)
         medium_calendar.events.add(ev)
