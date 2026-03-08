@@ -6,7 +6,6 @@ import json
 import os
 
 rss = "https://nfs.faireconomy.media/ff_calendar_thisweek.xml"
-
 db_file = "events.json"
 
 now = datetime.utcnow()
@@ -17,9 +16,9 @@ if os.path.exists(db_file):
     with open(db_file) as f:
         db = json.load(f)
 else:
-    db = []
+    db = {}
 
-# download weekly feed
+# fetch weekly calendar
 xml = requests.get(rss)
 root = ET.fromstring(xml.content)
 
@@ -48,39 +47,33 @@ for event in root.iter("event"):
     except:
         continue
 
-    entry = {
+    uid = f"{title}-{dt.isoformat()}"
+
+    db[uid] = {
         "title": title,
         "impact": impact,
         "time": dt.isoformat()
     }
 
-    if entry not in db:
-        db.append(entry)
+# keep only upcoming 90 days
+db = {
+    k:v for k,v in db.items()
+    if now <= datetime.fromisoformat(v["time"]) <= limit
+}
 
-# keep only next 90 days
-db = [
-    e for e in db
-    if now <= datetime.fromisoformat(e["time"]) <= limit
-]
-
-# save database
 with open(db_file,"w") as f:
     json.dump(db,f)
 
-# group events by timestamp
+# group events
 groups = {}
 
-for e in db:
+for e in db.values():
 
     dt = datetime.fromisoformat(e["time"])
     key = dt.strftime("%Y%m%dT%H%M")
 
     if key not in groups:
-        groups[key] = {
-            "time": dt,
-            "high": [],
-            "medium": []
-        }
+        groups[key] = {"time":dt,"high":[],"medium":[]}
 
     if e["impact"] == "High":
         groups[key]["high"].append(e["title"])
@@ -94,14 +87,14 @@ for g in groups.values():
 
     if g["high"]:
         ev = Event()
-        ev.name = "🔴 " + " | ".join(sorted(g["high"])) + " (USD)"
+        ev.name = "🔴 " + " | ".join(sorted(set(g["high"]))) + " (USD)"
         ev.begin = g["time"]
         ev.duration = timedelta(minutes=30)
         high_calendar.events.add(ev)
 
     if g["medium"]:
         ev = Event()
-        ev.name = "🟠 " + " | ".join(sorted(g["medium"])) + " (USD)"
+        ev.name = "🟠 " + " | ".join(sorted(set(g["medium"]))) + " (USD)"
         ev.begin = g["time"]
         ev.duration = timedelta(minutes=30)
         medium_calendar.events.add(ev)
