@@ -5,12 +5,12 @@ BEGIN:VEVENT
 DURATION:PT30M
 DTSTART:20260313T123000Z
 SUMMARY:🟠 Core Durable Goods Orders m/m | Durable Goods Orders m/m | Prelim GDP Price Index q/q (USD)
-UID:8acdf8ed-26a3-420e-af9c-b3dd1ff35ba0@8acd.org
+UID:638c1397-bdbf-41a4-9f83-97b46bf8291a@638c.org
 END:VEVENT
 BEGIN:VEVENT
 DURATION:PT30M
 DTSTART:20260313T140000Z
 SUMMARY:🟠 Prelim UoM Consumer Sentiment | Prelim UoM Inflation Expectations (USD)
-UID:ab9567d7-4008-4b66-aa3a-5df6a38b4cce@ab95.org
+UID:5fc41d1e-1a5e-4c23-b64a-8d955738fdbb@5fc4.org
 END:VEVENT
 END:VCALENDAR
