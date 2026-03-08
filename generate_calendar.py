@@ -2,7 +2,7 @@ from ics import Calendar, Event
 import requests
 from datetime import datetime, timedelta
 
-API_KEY = "YOUR_FINNHUB_KEY"
+API_KEY = "d6mq2dpr01qir35i1fu0d6mq2dpr01qir35i1fug"
 
 start = datetime.utcnow()
 end = start + timedelta(days=90)
