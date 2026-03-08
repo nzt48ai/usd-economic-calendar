@@ -1,37 +1,43 @@
 from ics import Calendar, Event
 import requests
+import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta
 
-API_KEY = "YOUR_FINNHUB_KEY"
+rss = "https://nfs.faireconomy.media/ff_calendar_thisweek.xml"
+
+xml = requests.get(rss)
+root = ET.fromstring(xml.content)
 
 start = datetime.utcnow()
 end = start + timedelta(days=90)
-
-url = f"https://finnhub.io/api/v1/calendar/economic?token={API_KEY}"
-
-response = requests.get(url)
-data = response.json().get("economicCalendar", [])
 
 high_calendar = Calendar()
 medium_calendar = Calendar()
 
 groups = {}
 
-for item in data:
+for event in root.iter("event"):
 
-    currency = item.get("currency")
-    impact = item.get("impact")
-    title = item.get("event")
-    timestamp = item.get("time")
+    try:
+        currency = event.find("country").text
+        impact = event.find("impact").text
+        title = event.find("title").text
+        date = event.find("date").text
+        time = event.find("time").text
+    except:
+        continue
 
     if currency != "USD":
         continue
 
-    if impact not in ["High", "Medium"]:
+    if impact not in ["High","Medium"]:
+        continue
+
+    if time == "All Day":
         continue
 
     try:
-        dt = datetime.fromtimestamp(timestamp)
+        dt = datetime.strptime(date + " " + time,"%m-%d-%Y %I:%M%p")
     except:
         continue
 
@@ -41,7 +47,7 @@ for item in data:
     key = dt.strftime("%Y%m%dT%H%M")
 
     if key not in groups:
-        groups[key] = {"time": dt, "high": [], "medium": []}
+        groups[key] = {"time":dt,"high":[],"medium":[]}
 
     if impact == "High":
         groups[key]["high"].append(title)
@@ -65,8 +71,8 @@ for g in groups.values():
         e.duration = timedelta(minutes=30)
         medium_calendar.events.add(e)
 
-with open("usd_high.ics", "w") as f:
+with open("usd_high.ics","w") as f:
     f.writelines(high_calendar)
 
-with open("usd_medium.ics", "w") as f:
+with open("usd_medium.ics","w") as f:
     f.writelines(medium_calendar)
