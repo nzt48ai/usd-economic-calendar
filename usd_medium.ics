@@ -3,20 +3,20 @@ VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 DURATION:PT30M
+DTSTART:20260313T123000Z
+SUMMARY:🟠 Core Durable Goods Orders m/m | Durable Goods Orders m/m | Prelim GDP Price Index q/q (USD)
+UID:68d4dcad-eb87-483a-9006-7a9e099c7373@68d4.org
+END:VEVENT
+BEGIN:VEVENT
+DURATION:PT30M
 DTSTART:20260311T202500Z
 SUMMARY:🟠 President Trump Speaks (USD)
-UID:b9d5bf62-0c83-4322-b2e9-0cf91f2277d3@b9d5.org
+UID:696dc5ee-6a02-40da-8b73-87a3f7246e0c@696d.org
 END:VEVENT
 BEGIN:VEVENT
 DURATION:PT30M
 DTSTART:20260313T140000Z
 SUMMARY:🟠 Prelim UoM Consumer Sentiment | Prelim UoM Inflation Expectations (USD)
-UID:a6a2fb48-e2f4-4f7f-b5a9-3e62a73b7baf@a6a2.org
-END:VEVENT
-BEGIN:VEVENT
-DURATION:PT30M
-DTSTART:20260313T123000Z
-SUMMARY:🟠 Core Durable Goods Orders m/m | Durable Goods Orders m/m | Prelim GDP Price Index q/q (USD)
-UID:d8866a4c-9e99-4589-b876-c7a39fce1792@d886.org
+UID:de8f4aec-a7e2-4244-9114-3695965e9532@de8f.org
 END:VEVENT
 END:VCALENDAR
