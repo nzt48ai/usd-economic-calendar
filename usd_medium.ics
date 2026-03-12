@@ -3,14 +3,14 @@ VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20260313T140000Z
-SUMMARY:🟠 Prelim UoM Consumer Sentiment | Prelim UoM Inflation Expectations (USD)
-UID:7a9ec7b9-2795-4ab2-98c6-829ec84f4c1f@7a9e.org
+DTSTART:20260313T123000Z
+SUMMARY:🟠 Core Durable Goods Orders m/m | Durable Goods Orders m/m | Prelim GDP Price Index q/q (USD)
+UID:aa7d8f3b-1adc-46f6-a7df-d1bb8fb0a10f@aa7d.org
 END:VEVENT
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20260313T123000Z
-SUMMARY:🟠 Core Durable Goods Orders m/m | Durable Goods Orders m/m | Prelim GDP Price Index q/q (USD)
-UID:7993b1e2-9741-420e-978f-42fbf95dc5e0@7993.org
+DTSTART:20260313T140000Z
+SUMMARY:🟠 Prelim UoM Consumer Sentiment | Prelim UoM Inflation Expectations (USD)
+UID:fc37edc0-ea89-4c53-8478-2eac7c6725a6@fc37.org
 END:VEVENT
 END:VCALENDAR
