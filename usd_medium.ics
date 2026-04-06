@@ -3,20 +3,20 @@ VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20260407T123000Z
-SUMMARY:🟠 Core Durable Goods Orders m/m | Durable Goods Orders m/m (USD)
-UID:b29b12e2-baa6-403d-ac4e-8859fa2eda18@b29b.org
+DTSTART:20260409T123000Z
+SUMMARY:🟠 Final GDP Price Index q/q | Unemployment Claims (USD)
+UID:4b163bb7-0814-458e-ae06-1092636cb849@4b16.org
 END:VEVENT
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20260409T123000Z
-SUMMARY:🟠 Final GDP Price Index q/q | Unemployment Claims (USD)
-UID:902f4441-3bf8-482b-abe7-d8bda571b5fc@902f.org
+DTSTART:20260407T123000Z
+SUMMARY:🟠 Core Durable Goods Orders m/m | Durable Goods Orders m/m (USD)
+UID:02324f9e-1af9-4b44-9170-47a21d8caa65@0232.org
 END:VEVENT
 BEGIN:VEVENT
 DURATION:PT30M
 DTSTART:20260410T140000Z
 SUMMARY:🟠 Prelim UoM Consumer Sentiment | Prelim UoM Inflation Expectations (USD)
-UID:ec80561e-04d9-441e-a850-48020c9fc961@ec80.org
+UID:cfc9c856-0ef4-4eea-b407-ac320672a228@cfc9.org
 END:VEVENT
 END:VCALENDAR
