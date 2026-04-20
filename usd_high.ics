@@ -4,13 +4,13 @@ PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 DURATION:PT30M
 DTSTART:20260421T140000Z
-SUMMARY:🔴 Fed Chair-Designate Warsh Testifies (USD)
-UID:cd765dc1-4282-4af7-9fdf-9db2a7d6ac19@cd76.org
+SUMMARY:🔴 Fed Chairman-Designate Warsh Testifies (USD)
+UID:5e18862a-4bdb-4193-b634-c1de747c4733@5e18.org
 END:VEVENT
 BEGIN:VEVENT
 DURATION:PT30M
 DTSTART:20260421T123000Z
 SUMMARY:🔴 Core Retail Sales m/m | Retail Sales m/m (USD)
-UID:676e494d-6df3-4ac3-a45c-3c1e9525dac6@676e.org
+UID:210f9064-07d4-49f0-807f-5f2c75a9a37e@210f.org
 END:VEVENT
 END:VCALENDAR
