@@ -3,14 +3,14 @@ VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20260501T140000Z
-SUMMARY:🟠 ISM Manufacturing PMI | ISM Manufacturing Prices (USD)
-UID:886e6eb1-6dec-4e2b-83e8-03c5eccb7e26@886e.org
+DTSTART:20260430T123000Z
+SUMMARY:🟠 Advance GDP Price Index q/q | Unemployment Claims (USD)
+UID:5abd1fb7-ce54-4a9c-bf65-c7208c8d12bf@5abd.org
 END:VEVENT
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20260430T123000Z
-SUMMARY:🟠 Advance GDP Price Index q/q | Unemployment Claims (USD)
-UID:2fba2ce6-9b54-4ca7-87ef-ac0ba484c75b@2fba.org
+DTSTART:20260501T140000Z
+SUMMARY:🟠 ISM Manufacturing PMI | ISM Manufacturing Prices (USD)
+UID:acf3e25a-044a-45fa-97d0-93d425b12d72@acf3.org
 END:VEVENT
 END:VCALENDAR
