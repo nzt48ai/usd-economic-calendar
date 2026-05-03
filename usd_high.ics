@@ -3,14 +3,14 @@ VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20260505T140000Z
-SUMMARY:🔴 ISM Services PMI | JOLTS Job Openings (USD)
-UID:1a49e3e8-02d9-4bc5-9e96-a3262ff3178d@1a49.org
+DTSTART:20260508T123000Z
+SUMMARY:🔴 Average Hourly Earnings m/m | Non-Farm Employment Change | Unemployment Rate (USD)
+UID:c96f7c0c-cb33-47b8-9e64-77d0c54a8585@c96f.org
 END:VEVENT
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20260508T123000Z
-SUMMARY:🔴 Average Hourly Earnings m/m | Non-Farm Employment Change | Unemployment Rate (USD)
-UID:f9fbe43a-5672-449d-a85f-9b4fdb94e1a9@f9fb.org
+DTSTART:20260505T140000Z
+SUMMARY:🔴 ISM Services PMI | JOLTS Job Openings (USD)
+UID:1b4ea39c-bcf0-4155-85ca-991ccd46f12b@1b4e.org
 END:VEVENT
 END:VCALENDAR
