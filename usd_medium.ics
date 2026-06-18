@@ -1,10 +1,4 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
-BEGIN:VEVENT
-DURATION:PT30M
-DTSTART:20260618T123000Z
-SUMMARY:🟠 Philly Fed Manufacturing Index | Unemployment Claims (USD)
-UID:b233c212-9c37-4606-9d2f-c2daad39ebeb@b233.org
-END:VEVENT
 END:VCALENDAR
