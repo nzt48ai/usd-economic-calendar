@@ -3,14 +3,20 @@ VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20260626T140000Z
-SUMMARY:🟠 Revised UoM Consumer Sentiment | Revised UoM Inflation Expectations (USD)
-UID:7f2a5282-aeaa-44ee-85de-b5d378dd5407@7f2a.org
+DTSTART:20260625T123000Z
+SUMMARY:🟠 Final GDP Price Index q/q | Unemployment Claims (USD)
+UID:ed732b6b-34b4-419f-b41c-645d852c4f4b@ed73.org
 END:VEVENT
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20260625T123000Z
-SUMMARY:🟠 Final GDP Price Index q/q | Unemployment Claims (USD)
-UID:aee1f4b4-842d-49b8-ac48-ade4fdbc5b87@aee1.org
+DTSTART:20260625T003000Z
+SUMMARY:🟠 President Trump Speaks (USD)
+UID:3ae5ea74-3a25-4093-9f77-f23365af7143@3ae5.org
+END:VEVENT
+BEGIN:VEVENT
+DURATION:PT30M
+DTSTART:20260626T140000Z
+SUMMARY:🟠 Revised UoM Consumer Sentiment | Revised UoM Inflation Expectations (USD)
+UID:6bf94a6d-de7c-4149-860b-09cf12a81b72@6bf9.org
 END:VEVENT
 END:VCALENDAR
