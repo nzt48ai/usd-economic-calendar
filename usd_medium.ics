@@ -3,14 +3,8 @@ VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20260625T123000Z
-SUMMARY:🟠 Final GDP Price Index q/q | Unemployment Claims (USD)
-UID:4fcec510-4e43-45de-8d9d-5303cdafaac2@4fce.org
-END:VEVENT
-BEGIN:VEVENT
-DURATION:PT30M
 DTSTART:20260626T140000Z
 SUMMARY:🟠 Revised UoM Consumer Sentiment | Revised UoM Inflation Expectations (USD)
-UID:019f44f6-681e-4e4f-b79a-f4da05bee476@019f.org
+UID:b0bcae99-fcb5-48d3-ad63-0423b2647dbd@b0bc.org
 END:VEVENT
 END:VCALENDAR
