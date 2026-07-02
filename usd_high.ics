@@ -1,10 +1,4 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
-BEGIN:VEVENT
-DURATION:PT30M
-DTSTART:20260702T123000Z
-SUMMARY:🔴 Average Hourly Earnings m/m | Non-Farm Employment Change | Unemployment Rate (USD)
-UID:69197c61-a67b-4f76-8e25-a1c4cdfafe8d@6919.org
-END:VEVENT
 END:VCALENDAR
