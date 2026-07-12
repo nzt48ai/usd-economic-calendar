@@ -1,4 +1,16 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DURATION:PT30M
+DTSTART:20260717T140000Z
+SUMMARY:🟠 Prelim UoM Consumer Sentiment | Prelim UoM Inflation Expectations (USD)
+UID:18dd922a-8e28-4dae-be2f-707456910364@18dd.org
+END:VEVENT
+BEGIN:VEVENT
+DURATION:PT30M
+DTSTART:20260716T123000Z
+SUMMARY:🟠 Core Retail Sales m/m | Philly Fed Manufacturing Index | Retail Sales m/m | Unemployment Claims (USD)
+UID:f86716cb-6039-4174-a869-603437e567f8@f867.org
+END:VEVENT
 END:VCALENDAR
