@@ -3,14 +3,14 @@ VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20260716T123000Z
-SUMMARY:🟠 Core Retail Sales m/m | Philly Fed Manufacturing Index | Retail Sales m/m | Unemployment Claims (USD)
-UID:a48718a0-885d-4c50-9c5b-790000960196@a487.org
+DTSTART:20260717T140000Z
+SUMMARY:🟠 Prelim UoM Consumer Sentiment | Prelim UoM Inflation Expectations (USD)
+UID:b7df91bf-e393-483d-8875-e6b8b46c4ffc@b7df.org
 END:VEVENT
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20260717T140000Z
-SUMMARY:🟠 Prelim UoM Consumer Sentiment | Prelim UoM Inflation Expectations (USD)
-UID:e723dcca-cd06-432c-950b-e286ae156074@e723.org
+DTSTART:20260716T123000Z
+SUMMARY:🟠 Core Retail Sales m/m | Philly Fed Manufacturing Index | Retail Sales m/m | Unemployment Claims (USD)
+UID:8ca50af8-72e0-450c-ab6c-155ad94a4bf6@8ca5.org
 END:VEVENT
 END:VCALENDAR
