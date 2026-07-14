@@ -5,12 +5,12 @@ BEGIN:VEVENT
 DURATION:PT30M
 DTSTART:20260717T140000Z
 SUMMARY:🟠 Prelim UoM Consumer Sentiment | Prelim UoM Inflation Expectations (USD)
-UID:d455efac-351f-4c46-ba61-178fe142c1f3@d455.org
+UID:fe84e503-9526-4bee-877b-b0441488c368@fe84.org
 END:VEVENT
 BEGIN:VEVENT
 DURATION:PT30M
 DTSTART:20260716T123000Z
 SUMMARY:🟠 Core Retail Sales m/m | Philly Fed Manufacturing Index | Retail Sales m/m | Unemployment Claims (USD)
-UID:c2f5d488-2529-4de8-a52b-60e618d2fa02@c2f5.org
+UID:749c2255-c8b3-42bb-9d12-a97130e10d68@749c.org
 END:VEVENT
 END:VCALENDAR
