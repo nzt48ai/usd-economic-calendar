@@ -3,20 +3,20 @@ VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20260717T140000Z
-SUMMARY:🟠 Prelim UoM Consumer Sentiment | Prelim UoM Inflation Expectations (USD)
-UID:46f779c7-da85-4869-83b3-415faf176ece@46f7.org
-END:VEVENT
-BEGIN:VEVENT
-DURATION:PT30M
 DTSTART:20260717T010000Z
 SUMMARY:🟠 President Trump Speaks (USD)
-UID:6594afe3-aaba-4fbb-9b4d-67d635dde53f@6594.org
+UID:76c025ed-1506-4964-a007-7c9ee84abcf1@76c0.org
 END:VEVENT
 BEGIN:VEVENT
 DURATION:PT30M
 DTSTART:20260716T123000Z
 SUMMARY:🟠 Core Retail Sales m/m | Philly Fed Manufacturing Index | Retail Sales m/m | Unemployment Claims (USD)
-UID:8da19e53-b985-4410-acc2-82773a340b5d@8da1.org
+UID:29792e87-1f1d-4cf5-af19-f712dafa81ba@2979.org
+END:VEVENT
+BEGIN:VEVENT
+DURATION:PT30M
+DTSTART:20260717T140000Z
+SUMMARY:🟠 Prelim UoM Consumer Sentiment | Prelim UoM Inflation Expectations (USD)
+UID:beaae18a-c9d3-485b-82eb-f84b029687b2@beaa.org
 END:VEVENT
 END:VCALENDAR
