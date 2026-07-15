@@ -5,18 +5,18 @@ BEGIN:VEVENT
 DURATION:PT30M
 DTSTART:20260717T140000Z
 SUMMARY:🟠 Prelim UoM Consumer Sentiment | Prelim UoM Inflation Expectations (USD)
-UID:2d63adae-2ff4-4954-a6ff-1898d0d01fc6@2d63.org
-END:VEVENT
-BEGIN:VEVENT
-DURATION:PT30M
-DTSTART:20260716T123000Z
-SUMMARY:🟠 Core Retail Sales m/m | Philly Fed Manufacturing Index | Retail Sales m/m | Unemployment Claims (USD)
-UID:3561846a-c186-4a0b-b5c2-cdfc99ae2cbe@3561.org
+UID:46f779c7-da85-4869-83b3-415faf176ece@46f7.org
 END:VEVENT
 BEGIN:VEVENT
 DURATION:PT30M
 DTSTART:20260717T010000Z
 SUMMARY:🟠 President Trump Speaks (USD)
-UID:122b4125-2748-4307-832b-e00c3cdf6c16@122b.org
+UID:6594afe3-aaba-4fbb-9b4d-67d635dde53f@6594.org
+END:VEVENT
+BEGIN:VEVENT
+DURATION:PT30M
+DTSTART:20260716T123000Z
+SUMMARY:🟠 Core Retail Sales m/m | Philly Fed Manufacturing Index | Retail Sales m/m | Unemployment Claims (USD)
+UID:8da19e53-b985-4410-acc2-82773a340b5d@8da1.org
 END:VEVENT
 END:VCALENDAR
