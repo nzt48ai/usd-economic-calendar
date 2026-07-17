@@ -1,10 +1,4 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
-BEGIN:VEVENT
-DURATION:PT30M
-DTSTART:20260717T140000Z
-SUMMARY:🟠 Prelim UoM Consumer Sentiment | Prelim UoM Inflation Expectations (USD)
-UID:05f41feb-8be1-4812-b03d-9d4caa55c5e6@05f4.org
-END:VEVENT
 END:VCALENDAR
