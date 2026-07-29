@@ -3,20 +3,20 @@ VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20260730T123000Z
-SUMMARY:🟠 Advance GDP Price Index q/q | Unemployment Claims (USD)
-UID:3c64cc2b-2bf4-4e4b-bf23-8ab0025071d1@3c64.org
+DTSTART:20260731T140000Z
+SUMMARY:🟠 Revised UoM Consumer Sentiment | Revised UoM Inflation Expectations (USD)
+UID:5c1e4194-2017-4eef-a6c2-ef9035897138@5c1e.org
 END:VEVENT
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20260731T140000Z
-SUMMARY:🟠 Revised UoM Consumer Sentiment | Revised UoM Inflation Expectations (USD)
-UID:1063a52d-158b-4289-aa8d-d550fc30b75d@1063.org
+DTSTART:20260730T123000Z
+SUMMARY:🟠 Advance GDP Price Index q/q | Unemployment Claims (USD)
+UID:d31f5dbd-8ffc-4bd0-9464-ff73471cb18a@d31f.org
 END:VEVENT
 BEGIN:VEVENT
 DURATION:PT30M
 DTSTART:20260731T123000Z
 SUMMARY:🟠 Employment Cost Index q/q (USD)
-UID:38a8d7cd-76ce-4cd1-92c7-df86b39e07a7@38a8.org
+UID:4ad592dc-da5b-47b0-b8ba-ad8f0cf612da@4ad5.org
 END:VEVENT
 END:VCALENDAR
