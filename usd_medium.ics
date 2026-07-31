@@ -3,14 +3,14 @@ VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20260731T123000Z
-SUMMARY:🟠 Employment Cost Index q/q (USD)
-UID:17530bc6-2960-48c2-8373-dec0f919f7d0@1753.org
+DTSTART:20260731T140000Z
+SUMMARY:🟠 Revised UoM Consumer Sentiment | Revised UoM Inflation Expectations (USD)
+UID:e5fa0b47-cfda-44b3-b75d-85fd18e5dd4c@e5fa.org
 END:VEVENT
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20260731T140000Z
-SUMMARY:🟠 Revised UoM Consumer Sentiment | Revised UoM Inflation Expectations (USD)
-UID:44d2dd1b-9f81-4d4c-8860-dc2f491ec595@44d2.org
+DTSTART:20260731T123000Z
+SUMMARY:🟠 Employment Cost Index q/q (USD)
+UID:45fa0d3c-3145-4e0f-b4e2-54bd27f570e1@45fa.org
 END:VEVENT
 END:VCALENDAR
