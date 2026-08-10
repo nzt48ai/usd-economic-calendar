@@ -3,20 +3,20 @@ VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20260814T123000Z
-SUMMARY:🟠 Core Retail Sales m/m | Retail Sales m/m (USD)
-UID:2b2ab487-63e2-461a-94e7-467a03dfb247@2b2a.org
+DTSTART:20260814T140000Z
+SUMMARY:🟠 Prelim UoM Consumer Sentiment | Prelim UoM Inflation Expectations (USD)
+UID:96e9e6da-6fca-48b0-accf-89d16a3429d7@96e9.org
 END:VEVENT
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20260814T140000Z
-SUMMARY:🟠 Prelim UoM Consumer Sentiment | Prelim UoM Inflation Expectations (USD)
-UID:4e3588fc-0e9c-44d8-8396-593f46a1d6b5@4e35.org
+DTSTART:20260814T123000Z
+SUMMARY:🟠 Core Retail Sales m/m | Retail Sales m/m (USD)
+UID:35c552f2-cba7-48f0-b883-c8a43f386e4a@35c5.org
 END:VEVENT
 BEGIN:VEVENT
 DURATION:PT30M
 DTSTART:20260813T123000Z
 SUMMARY:🟠 Unemployment Claims (USD)
-UID:ccb6fb49-00d6-4a7b-be1d-9d2e045dfacc@ccb6.org
+UID:d01a465a-ac63-4140-9bd7-4003a3f0c5d5@d01a.org
 END:VEVENT
 END:VCALENDAR
