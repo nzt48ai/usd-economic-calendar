@@ -3,14 +3,14 @@ VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20260814T123000Z
-SUMMARY:🟠 Core Retail Sales m/m | Retail Sales m/m (USD)
-UID:804596da-3778-48c7-a914-ebcb116460a8@8045.org
+DTSTART:20260814T140000Z
+SUMMARY:🟠 Prelim UoM Consumer Sentiment | Prelim UoM Inflation Expectations (USD)
+UID:95f20381-77ff-40d4-b609-e2a75f7b1c0f@95f2.org
 END:VEVENT
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20260814T140000Z
-SUMMARY:🟠 Prelim UoM Consumer Sentiment | Prelim UoM Inflation Expectations (USD)
-UID:e4ba9d69-14b4-4859-82cc-590841c5149a@e4ba.org
+DTSTART:20260814T123000Z
+SUMMARY:🟠 Core Retail Sales m/m | Retail Sales m/m (USD)
+UID:c89ceca8-0e66-4b4f-b0ba-a3ff02b2069b@c89c.org
 END:VEVENT
 END:VCALENDAR
