@@ -3,14 +3,14 @@ VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20260826T123000Z
-SUMMARY:🔴 Core PCE Price Index m/m | Prelim GDP q/q (USD)
-UID:f98d8c9e-6ba0-4291-81c4-1bbef2f4895e@f98d.org
+DTSTART:20260828T140000Z
+SUMMARY:🔴 Fed Chairman Warsh Speaks | Prelim Benchmark Payrolls Revision (USD)
+UID:1f6bd5d1-29f5-4ba4-bd55-bf163c9c7f6b@1f6b.org
 END:VEVENT
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20260828T140000Z
-SUMMARY:🔴 Fed Chairman Warsh Speaks | Prelim Benchmark Payrolls Revision (USD)
-UID:37ecfba8-3c72-4d10-a5bf-8b9778a31756@37ec.org
+DTSTART:20260826T123000Z
+SUMMARY:🔴 Core PCE Price Index m/m | Prelim GDP q/q (USD)
+UID:546e90d0-4d74-4b62-b669-8f49896fb8aa@546e.org
 END:VEVENT
 END:VCALENDAR
