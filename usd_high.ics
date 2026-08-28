@@ -1,10 +1,4 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
-BEGIN:VEVENT
-DURATION:PT30M
-DTSTART:20260828T140000Z
-SUMMARY:🔴 Fed Chairman Warsh Speaks | Prelim Benchmark Payrolls Revision (USD)
-UID:f6d87bbe-c930-4a87-8193-632b21fb3418@f6d8.org
-END:VEVENT
 END:VCALENDAR

@@ -1,10 +1,4 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
-BEGIN:VEVENT
-DURATION:PT30M
-DTSTART:20260828T140000Z
-SUMMARY:🟠 Revised UoM Consumer Sentiment | Revised UoM Inflation Expectations (USD)
-UID:626a304e-24c6-4ecc-ab13-4ea052fa405b@626a.org
-END:VEVENT
 END:VCALENDAR
