@@ -3,14 +3,14 @@ VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20260901T140000Z
-SUMMARY:🔴 ISM Manufacturing PMI (USD)
-UID:cf5db5f3-78f1-4291-bc12-0b3401e1b5a4@cf5d.org
+DTSTART:20260904T123000Z
+SUMMARY:🔴 Average Hourly Earnings m/m | Non-Farm Employment Change | Unemployment Rate (USD)
+UID:2e4b9add-8500-4562-a163-b7564b9fe1d2@2e4b.org
 END:VEVENT
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20260904T123000Z
-SUMMARY:🔴 Average Hourly Earnings m/m | Non-Farm Employment Change | Unemployment Rate (USD)
-UID:8856eda8-aff5-484d-8473-01c138e6e9d9@8856.org
+DTSTART:20260901T140000Z
+SUMMARY:🔴 ISM Manufacturing PMI (USD)
+UID:0b3fab8d-525b-4419-ae6f-3b51657ef794@0b3f.org
 END:VEVENT
 END:VCALENDAR
