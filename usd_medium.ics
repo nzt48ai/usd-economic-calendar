@@ -3,14 +3,14 @@ VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20260916T123000Z
-SUMMARY:🟠 Core Retail Sales m/m | Retail Sales m/m (USD)
-UID:f7c1890c-b130-4f1b-9d39-070a80738a8b@f7c1.org
+DTSTART:20260917T123000Z
+SUMMARY:🟠 Philly Fed Manufacturing Index | Unemployment Claims (USD)
+UID:9e89b46f-a213-49d5-bde5-3aeca8dd4af1@9e89.org
 END:VEVENT
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20260917T123000Z
-SUMMARY:🟠 Philly Fed Manufacturing Index | Unemployment Claims (USD)
-UID:13d89347-20c7-4b0d-9856-11daac46095b@13d8.org
+DTSTART:20260916T123000Z
+SUMMARY:🟠 Core Retail Sales m/m | Retail Sales m/m (USD)
+UID:fb0b28ea-ec7e-4c08-8f86-6352add299c2@fb0b.org
 END:VEVENT
 END:VCALENDAR
