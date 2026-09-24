@@ -3,14 +3,14 @@ VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20260925T140000Z
-SUMMARY:🟠 Revised UoM Consumer Sentiment | Revised UoM Inflation Expectations (USD)
-UID:ecdd2a82-a506-4887-b0e4-b515ecc32f5e@ecdd.org
+DTSTART:20260924T123000Z
+SUMMARY:🟠 Unemployment Claims (USD)
+UID:2a9fd342-cbe5-469a-a1fa-acda3fe16198@2a9f.org
 END:VEVENT
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20260924T123000Z
-SUMMARY:🟠 Unemployment Claims (USD)
-UID:8a13d4e6-3097-4a26-b5a9-c40a3fd18f4b@8a13.org
+DTSTART:20260925T140000Z
+SUMMARY:🟠 Revised UoM Consumer Sentiment | Revised UoM Inflation Expectations (USD)
+UID:08d7387d-3d16-4f14-844c-15e18a27339c@08d7.org
 END:VEVENT
 END:VCALENDAR
