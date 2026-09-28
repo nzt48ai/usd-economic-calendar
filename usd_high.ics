@@ -3,14 +3,14 @@ VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20261002T123000Z
-SUMMARY:🔴 Average Hourly Earnings m/m | Non-Farm Employment Change | Unemployment Rate (USD)
-UID:909d1e38-bc1b-4298-9a2c-df141ba5b227@909d.org
+DTSTART:20260930T123000Z
+SUMMARY:🔴 Core PCE Price Index m/m | Final GDP q/q (USD)
+UID:11ec3d92-bbc6-4504-9407-72ddd9a003b5@11ec.org
 END:VEVENT
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20260930T123000Z
-SUMMARY:🔴 Core PCE Price Index m/m | Final GDP q/q (USD)
-UID:bcaeaf09-362d-4408-b2b6-999cdf147c99@bcae.org
+DTSTART:20261002T123000Z
+SUMMARY:🔴 Average Hourly Earnings m/m | Non-Farm Employment Change | Unemployment Rate (USD)
+UID:2335b7d1-60b5-4309-b60a-7a67abe58708@2335.org
 END:VEVENT
 END:VCALENDAR
