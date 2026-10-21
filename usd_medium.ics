@@ -3,20 +3,20 @@ VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20261023T140000Z
-SUMMARY:🟠 Revised UoM Consumer Sentiment | Revised UoM Inflation Expectations (USD)
-UID:b4fc4777-bced-43c6-b612-0250a85e4bdf@b4fc.org
+DTSTART:20261023T134500Z
+SUMMARY:🟠 Flash Manufacturing PMI | Flash Services PMI (USD)
+UID:a96b9ed3-41dc-4546-9fc8-044999a5dcb9@a96b.org
 END:VEVENT
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20261023T134500Z
-SUMMARY:🟠 Flash Manufacturing PMI | Flash Services PMI (USD)
-UID:1b77fd44-f7ac-40b6-b5cd-1cc9f28811b2@1b77.org
+DTSTART:20261023T140000Z
+SUMMARY:🟠 Revised UoM Consumer Sentiment | Revised UoM Inflation Expectations (USD)
+UID:525b7e9f-1925-422b-8257-708ac8f1cab4@525b.org
 END:VEVENT
 BEGIN:VEVENT
 DURATION:PT30M
 DTSTART:20261022T123000Z
 SUMMARY:🟠 Unemployment Claims (USD)
-UID:ee71e330-ba97-44a9-bd0c-e9526dbfeb1c@ee71.org
+UID:74d5d79b-cdb2-4275-9f47-a0cbb1f0fb22@74d5.org
 END:VEVENT
 END:VCALENDAR
