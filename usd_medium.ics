@@ -3,14 +3,14 @@ VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20261030T123000Z
-SUMMARY:🟠 Employment Cost Index q/q (USD)
-UID:bb398ee5-3222-4d89-bf4f-947557b498e1@bb39.org
+DTSTART:20261029T123000Z
+SUMMARY:🟠 Advance GDP Price Index q/q | Unemployment Claims (USD)
+UID:a0a19c8c-95bd-4873-95ee-02b3aaedbfac@a0a1.org
 END:VEVENT
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20261029T123000Z
-SUMMARY:🟠 Advance GDP Price Index q/q | Unemployment Claims (USD)
-UID:c7deccc8-d3a9-469b-b303-5ece1acfc219@c7de.org
+DTSTART:20261030T123000Z
+SUMMARY:🟠 Employment Cost Index q/q (USD)
+UID:28d0e25b-3b3c-46ee-95b6-d04355ce5f73@28d0.org
 END:VEVENT
 END:VCALENDAR
