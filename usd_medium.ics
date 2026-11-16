@@ -3,20 +3,14 @@ VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20261120T150000Z
-SUMMARY:🟠 Revised UoM Consumer Sentiment | Revised UoM Inflation Expectations (USD)
-UID:1c72e4a1-bacc-4e74-91cf-460710443d1f@1c72.org
-END:VEVENT
-BEGIN:VEVENT
-DURATION:PT30M
 DTSTART:20261119T133000Z
 SUMMARY:🟠 Philly Fed Manufacturing Index | Unemployment Claims (USD)
-UID:eece9258-fa00-4bc8-bcd2-21aff3f4e645@eece.org
+UID:7340a1e7-3e85-4718-85db-6aa8ca4435dc@7340.org
 END:VEVENT
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20261120T132500Z
-SUMMARY:🟠 FOMC Member Waller Speaks (USD)
-UID:42fc3dd6-d7ac-49bd-9f18-46eecfada5a2@42fc.org
+DTSTART:20261120T150000Z
+SUMMARY:🟠 Revised UoM Consumer Sentiment | Revised UoM Inflation Expectations (USD)
+UID:f81846b2-3c62-4ce2-b68c-4a11a1a217a5@f818.org
 END:VEVENT
 END:VCALENDAR
