@@ -3,14 +3,14 @@ VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20261120T150000Z
-SUMMARY:🟠 Revised UoM Consumer Sentiment | Revised UoM Inflation Expectations (USD)
-UID:c5646bec-374f-4219-a817-e7d5592ba811@c564.org
+DTSTART:20261119T133000Z
+SUMMARY:🟠 Philly Fed Manufacturing Index | Unemployment Claims (USD)
+UID:8993cada-a2be-43e4-8e9f-ca0d2323d46f@8993.org
 END:VEVENT
 BEGIN:VEVENT
 DURATION:PT30M
-DTSTART:20261119T133000Z
-SUMMARY:🟠 Philly Fed Manufacturing Index | Unemployment Claims (USD)
-UID:21a2399f-0f30-4f2d-b3d1-3b161fc628ba@21a2.org
+DTSTART:20261120T150000Z
+SUMMARY:🟠 Revised UoM Consumer Sentiment | Revised UoM Inflation Expectations (USD)
+UID:9998e8c3-efc7-42ed-8fcd-72551a0304cf@9998.org
 END:VEVENT
 END:VCALENDAR
