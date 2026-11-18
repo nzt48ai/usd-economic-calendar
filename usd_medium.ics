@@ -5,12 +5,12 @@ BEGIN:VEVENT
 DURATION:PT30M
 DTSTART:20261119T133000Z
 SUMMARY:🟠 Philly Fed Manufacturing Index | Unemployment Claims (USD)
-UID:8993cada-a2be-43e4-8e9f-ca0d2323d46f@8993.org
+UID:bdc0fedb-415b-435e-ba13-de56ccd555e3@bdc0.org
 END:VEVENT
 BEGIN:VEVENT
 DURATION:PT30M
 DTSTART:20261120T150000Z
 SUMMARY:🟠 Revised UoM Consumer Sentiment | Revised UoM Inflation Expectations (USD)
-UID:9998e8c3-efc7-42ed-8fcd-72551a0304cf@9998.org
+UID:344b7a92-26e4-4d18-a7e7-ab3cc4915102@344b.org
 END:VEVENT
 END:VCALENDAR
