@@ -4,13 +4,13 @@ PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 DURATION:PT30M
 DTSTART:20261125T133000Z
-SUMMARY:🟠 Prelim GDP Price Index q/q | Unemployment Claims (USD)
-UID:12fdbcb5-9d2d-492f-bb88-a49e00c46e6d@12fd.org
+SUMMARY:🟠 Prelim GDP Price Index q/q (USD)
+UID:b8d59dba-cdb4-4551-9bcf-c5f9cc9f3b47@b8d5.org
 END:VEVENT
 BEGIN:VEVENT
 DURATION:PT30M
 DTSTART:20261124T150000Z
 SUMMARY:🟠 CB Consumer Confidence (USD)
-UID:eef69ac9-d9af-45cb-8d6f-4c091be8bcad@eef6.org
+UID:6a95fed8-7ec0-4550-9b40-74d2fcffeb43@6a95.org
 END:VEVENT
 END:VCALENDAR
